@@ -1,0 +1,281 @@
+body{
+    background: #182936;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+.active__a{
+    color: #FFFFFF;
+}
+::-webkit-scrollbar {
+    width: 7px;
+    background-color: black;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #20BCC6;
+    height: 20px;
+}
+.main__nav{
+    color: grey;
+    font-size: 16px;
+    font-family: "Lato";
+    margin: 20px auto 50px;
+    width: 1165px;
+}
+.main__nav a:first-child{
+    color: grey;
+}
+.main__nav a:hover{
+    color: #FFFFFF;
+}
+.main__info{
+    display: flex;
+    justify-content: center;
+    width: 1157px;
+    margin: 0 auto;
+}
+.main__info-img{
+    margin: 0 20px 0 0;
+}
+.main__info img{
+    width: 105px;
+    border-radius: 10px;
+}
+.main__info p{
+    font-size: 16px;
+    font-family: "Lato";
+    color: #FFFFFF;
+    line-height: 30px;
+}
+.main__info p:nth-child(3){
+    font-family: "Lato";
+    font-size: 20px;
+    color: #D69200;
+    margin: 5px 0 0 0;
+}
+.main__info h1{
+    font-family: "Lato";
+    color: #FFFFFF;
+    margin: 0;
+    font-size: 28px;
+}
+.main__movie{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1194px;
+    justify-content: center;
+}
+.main__films-txt{
+    width: 1157px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.main__films-txt p{
+    font-size: 28px;
+    font-family: "Lato";
+    color: #FFFFFF;
+}
+.main__movie{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1194px;
+    margin: 0 auto;
+}
+.main__movie p:nth-child(2){
+    font-size: 16px;
+    color: #FFFFFF;
+    font-family: "Lato";
+    margin: 15px 0 0 0;
+    transition: all 0.3s ease 0s;
+    cursor:pointer;
+}
+.main__movie p:nth-child(3){
+    font-size: 12px;
+    color: grey;
+    font-family: "Lato";
+    opacity: .54;
+    margin: 0;
+    cursor: pointer;
+}
+.main__movie img{
+    height: 264px;
+    border-radius: 10px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+.img-test{
+    float:left;
+    margin: 0 20px 0 0;
+}
+.main__overflow__hidden{
+    padding: 0 8px;
+    margin: 0 0 60px 0;
+    border-radius: 10px;
+    width: 180px;
+}
+.main__blue__button{
+    color: #20BCC6;
+    font-size: 16px;
+    font-family: "Lato";
+    cursor:pointer;
+    width: 23px;
+}
+.main__blue__button:hover{
+    color: #FFFFFF;
+}
+.main__movie div:hover p:nth-child(2){
+    color:#20BEC6;
+}
+.main__movie div:hover img{
+    transform:scale(1.1);
+    border-radius:10px;
+}
+.test{
+    border:2px solid transparent;
+    overflow:hidden;
+}
+.test:hover{
+    border:2px solid #20BEC6;
+    border-radius: 10px;
+}
+.hide{
+    display: none;
+}
+.hide.visible{
+    display: inline-block;
+}
+@media(max-width:1237px){
+    .main__info{
+        width: 768px;
+    }
+    .main__movie{
+        width: 800px;
+    }
+    .main__nav{
+        width: 771px;
+    }
+    .main__films-txt{
+        width: 768px;
+    }
+}
+@media(max-width:810px){
+    .main__info{
+        width: 575px;
+    }
+    .main__movie{
+        width: 600px;
+        justify-content: center;
+    }
+    .main__nav{
+        width: 580px;
+    }
+    .main__films-txt{
+        width: 572px;
+    }
+    .main__info h1{
+        margin: 0;
+        font-size: 20px;
+    }
+    .main__films-txt p {
+        font-size: 20px;
+    }
+    .wdth__800{
+        display: none;
+    }
+    .wdth__800.visible{
+        display: inline-block;
+    }
+}
+@media(max-width:626px){
+    .main__info{
+        width: 367px;
+    }
+    .main__movie{
+        width: 400px;
+        justify-content: center;
+    }
+    .main__nav{
+        width: 370px;
+    }
+    .main__films-txt{
+        width: 370px;
+    }  
+    .main__movie p:nth-child(2) {
+        font-size: 12px;
+    }
+    .wdth__600{
+        display: none;
+    }
+    .wdth__600.visible{
+        display: inline-block;
+    }
+}
+@media(max-width:400px){
+    .main__overflow__hidden{
+        width: 120px;
+        margin: 0 0 40px 0;
+    }
+    .main__movie img{
+        height: 171px;
+    }
+    .main__films-txt{
+        width: 370px;
+    } 
+    .main__films-txt{
+        width: 250px;
+    } 
+    .main__nav{
+        width: 250px;
+    }
+    .main__info{
+        width: 250px;
+    }
+    .main__movie{
+        width: 291px;
+        justify-content: center;
+    }
+    .wdth__400{
+        display: none;
+    }
+    .wdth__400.visible{
+        display: inline-block;
+    }
+}
+/*.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db; 
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}*/
+@font-face {
+    font-family: "Lato"; 
+    src: url("fonts/Lato-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+@font-face {
+    font-family: "Lato-Black"; 
+    src: url("fonts/Lato-Black.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+@font-face {
+    font-family: "Roboto-Bold"; 
+    src: url("fonts/Roboto-Bold.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+@font-face {
+    font-family: "RobotoCondensed-Regular"; 
+    src: url("fonts/RobotoCondensed-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
