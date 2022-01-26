@@ -20,8 +20,8 @@ a{
     color: grey;
     font-size: 16px;
     font-family: "Lato";
-    margin: 20px auto 50px;
-    width: 1165px;
+    margin: 20px auto 16px;
+    width: 1175px;
 }
 .main__nav a:first-child{
     color: grey;
@@ -32,7 +32,7 @@ a{
 .main__info{
     display: flex;
     justify-content: center;
-    width: 1157px;
+    width: 1175px;
     margin: 0 auto;
 }
 .main__info-img{
@@ -47,6 +47,7 @@ a{
     font-family: "Lato";
     color: #FFFFFF;
     line-height: 30px;
+    margin: 0 0 8px 0;
 }
 .main__info p:nth-child(3){
     font-family: "Lato";
@@ -64,12 +65,11 @@ a{
     display: flex;
     flex-wrap: wrap;
     width: 1194px;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 .main__films-txt{
-    width: 1157px;
+    width: 1175\px;
     margin: 0 auto;
-    padding: 0 10px;
 }
 .main__films-txt p{
     font-size: 28px;
@@ -78,8 +78,8 @@ a{
 }
 .main__movie{
     display: flex;
-    flex-wrap: wrap;
-    width: 1194px;
+    max-width: 1194px;
+    width: 100%;
     margin: 0 auto;
 }
 .main__movie p:nth-child(2){
@@ -99,7 +99,8 @@ a{
     cursor: pointer;
 }
 .main__movie img{
-    height: 264px;
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
     transition: all 0.3s ease 0s;
     cursor: pointer;
@@ -112,7 +113,8 @@ a{
     padding: 0 8px;
     margin: 0 0 60px 0;
     border-radius: 10px;
-    width: 180px;
+    max-width: 180px;
+    width: 100%;
 }
 .main__blue__button{
     color: #20BCC6;
@@ -134,6 +136,8 @@ a{
 .test{
     border:2px solid transparent;
     overflow:hidden;
+    max-width: 180px;
+    width: 100%;
 }
 .test:hover{
     border:2px solid #20BEC6;
@@ -145,33 +149,51 @@ a{
 .hide.visible{
     display: inline-block;
 }
-@media(max-width:1237px){
+@media(max-width:1186px){
     .main__info{
-        width: 768px;
+        width: auto;
+        padding: 0 15px;
     }
     .main__movie{
-        width: 800px;
+        width: auto;
     }
     .main__nav{
-        width: 771px;
+        width: auto;
+        padding: 0 15px;
     }
     .main__films-txt{
-        width: 768px;
+        width: auto;
+        padding: 0 15px;
+    }
+}
+@media(max-width:1174px){
+    .main__overflow__hidden{
+        max-width:160px;
+    }
+}
+@media(max-width:1156px){
+    .main__overflow__hidden{
+        max-width:180px;
+    }
+}
+@media(max-width:980px){
+    .main__overflow__hidden{
+        max-width:160px;
+    }
+}
+@media(max-width:880px){
+    .main__overflow__hidden{
+        max-width:180px;
+    }
+}
+@media(max-width:784px){
+    .main__overflow__hidden{
+        max-width:160px;
     }
 }
 @media(max-width:810px){
-    .main__info{
-        width: 575px;
-    }
     .main__movie{
-        width: 600px;
-        justify-content: center;
-    }
-    .main__nav{
-        width: 580px;
-    }
-    .main__films-txt{
-        width: 572px;
+        justify-content: space-evenly;
     }
     .main__info h1{
         margin: 0;
@@ -188,19 +210,9 @@ a{
     }
 }
 @media(max-width:626px){
-    .main__info{
-        width: 367px;
-    }
     .main__movie{
-        width: 400px;
-        justify-content: center;
-    }
-    .main__nav{
-        width: 370px;
-    }
-    .main__films-txt{
-        width: 370px;
-    }  
+        justify-content: space-evenly;
+    } 
     .main__movie p:nth-child(2) {
         font-size: 12px;
     }
@@ -213,27 +225,14 @@ a{
 }
 @media(max-width:400px){
     .main__overflow__hidden{
-        width: 120px;
+        max-width: 134px;
         margin: 0 0 40px 0;
     }
     .main__movie img{
         height: 171px;
-    }
-    .main__films-txt{
-        width: 370px;
     } 
-    .main__films-txt{
-        width: 250px;
-    } 
-    .main__nav{
-        width: 250px;
-    }
-    .main__info{
-        width: 250px;
-    }
     .main__movie{
-        width: 291px;
-        justify-content: center;
+        justify-content: space-evenly;
     }
     .wdth__400{
         display: none;
