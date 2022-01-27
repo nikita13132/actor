@@ -140,7 +140,7 @@ a{
 .hide.visible{
     display: inline-block;
 }
-@media(max-width:1186px){
+@media(max-width:1194px){
     .main__info{
         width: auto;
         padding: 0 15px;
@@ -167,7 +167,7 @@ a{
 @media(max-width:1000px){
     .main__overflow__hidden {
         padding: 0 8px;
-        width: 16.66667%;
+        width: 16%;
         margin: 0 0 60px;
         border-radius: 10px;
         max-width: 160px;
@@ -267,10 +267,6 @@ a{
     }
 }
 @media(max-width:400px){
-    .main__overflow__hidden{
-        max-width: 134px;
-        margin: 0 0 40px 0;
-    }
     .main__movie img{
         height: 171px;
     } 
